@@ -1,0 +1,31 @@
+object DM: TDM
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  OldCreateOrder = False
+  Height = 283
+  HorizontalOffset = 248
+  VerticalOffset = 119
+  Width = 402
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+      'codepage='
+    )
+    HostName = '64.31.19.107'
+    Port = 3050
+    Database = 'C:\Sistemas\mafsistemas\mafsistemas.fdb'
+    User = 'SYSDBA'
+    Password = 'masterkey'
+    Protocol = 'firebirdd-2.5'
+    Left = 60
+    Top = 41
+  end
+  object ZQuery1: TZQuery
+    Params = <>
+    Left = 244
+    Top = 58
+  end
+end
